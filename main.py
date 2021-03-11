@@ -41,10 +41,10 @@ class DeepFashion2Config(Config):
     
     USE_MINI_MASK = True
 
-    train_img_dir = "/home/gdliu/data/DeepFashion2/train/image"
-    train_json_path = "/home/gdliu/data/DeepFashion2/train/train.json"
-    valid_img_dir = "/home/gdliu/data/DeepFashion2/validation/image"
-    valid_json_path = "/home/gdliu/data/DeepFashion2/validation/val.json"
+    train_img_dir = "path/to/train/image"
+    train_json_path = "path/to/train.json"
+    valid_img_dir = "path/to/validation/image"
+    valid_json_path = "path/to/val.json"
 
 
 ############################################################

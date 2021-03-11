@@ -24,7 +24,7 @@ class TestConfig(Config):
 
 rcnn = MaskRCNN(mode='inference', model_dir='logs/deepfashion2', config=TestConfig())
 rcnn.load_weights('mask_rcnn_deepfashion2_0030.h5', by_name=True)
-img = skimage.io.imread('/media/data3/gdliu_data/DeepFashion2/train/image/062650.jpg')
+img = skimage.io.imread('/path/to/image')
 results = rcnn.detect([img], verbose=1)
 r = results[0]
 visualize.display_instances(img, r['rois'], r['masks'], r['class_ids'], class_names, r['scores'])
