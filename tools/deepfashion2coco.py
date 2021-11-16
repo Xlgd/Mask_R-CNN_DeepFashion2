@@ -128,6 +128,7 @@ for num in tqdm(range(1, num_images+1)):
     if (num>=0):
         imag = Image.open(image_name)
         width, height = imag.size
+        imag.close()
         with open(json_name, 'r') as f:
             temp = json.loads(f.read())
             pair_id = temp['pair_id']
